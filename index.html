@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f3ee">
+<title>Aarikaa Arora — Ideas into Impact</title>
+<meta name="description" content="The personal portfolio of Aarikaa Arora — youth leadership, public policy, debate and social impact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f6f2;--paper:#fffefa;--ink:#252522;--muted:#77766f;--line:#e4e1d9;--accent:#a95743;--accent2:#d8b4a6;--shadow:0 18px 55px rgba(45,40,34,.07);--nav:rgba(247,246,242,.86)}
+[data-theme="dark"]{--bg:#191918;--paper:#222220;--ink:#f1efe9;--muted:#aaa79f;--line:#3a3934;--accent:#d18a72;--accent2:#76594e;--shadow:0 18px 55px rgba(0,0,0,.24);--nav:rgba(25,25,24,.88)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;transition:background .3s,color .3s}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.progress{position:fixed;z-index:1000;top:0;left:0;height:3px;width:0;background:var(--accent)}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.mono{font:11px "DM Mono",monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.serif{font-family:"Playfair Display",serif}.accent{color:var(--accent)}
+header{position:sticky;top:0;z-index:100;background:var(--nav);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:-.04em}.brand-mark{width:36px;height:36px;border:1px solid var(--ink);display:grid;place-items:center;font:15px "Playfair Display",serif;border-radius:50%}.nav-links{display:flex;gap:30px;align-items:center}.nav-links a{font-size:12px;color:var(--muted);transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--accent)}.nav-actions{display:flex;gap:10px;align-items:center}.icon-btn{width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:transparent;display:grid;place-items:center;cursor:pointer;transition:.2s}.icon-btn:hover{border-color:var(--accent);color:var(--accent)}.menu-btn{display:none}
+.hero{padding:104px 0 86px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:center}.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:28px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--accent)}h1{font:clamp(62px,8.3vw,108px)/.96 "Playfair Display",serif;letter-spacing:-.065em;margin:0 0 26px;font-weight:500}h1 em{color:var(--accent);font-weight:500}.hero-copy{font-size:16px;line-height:1.8;color:var(--muted);max-width:560px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 19px;border:1px solid var(--ink);font-size:12px;font-weight:600;letter-spacing:.02em;transition:transform .2s,background .2s,color .2s;cursor:pointer}.btn:hover{transform:translateY(-3px)}.btn.primary{background:var(--ink);color:var(--bg)}.btn.primary:hover{background:var(--accent);border-color:var(--accent)}.btn.secondary:hover{border-color:var(--accent);color:var(--accent)}.btn svg{width:15px;height:15px}
+.hero-aside{position:relative;min-height:390px;display:grid;place-items:center}.orbit{width:310px;height:310px;border:1px solid var(--line);border-radius:50%;position:absolute;animation:rotate 35s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid var(--line);border-radius:50%;inset:28px}.orbit:after{inset:62px;border-style:dashed}.orbit-dot{position:absolute;top:30px;left:53px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 7px var(--bg),0 0 0 8px var(--accent)}.monogram{width:230px;height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;color:var(--ink);transform:none}.monogram:before{content:"";position:absolute;inset:25px;border:1px solid var(--line);border-radius:50%}.monogram:after{content:"";position:absolute;width:174px;height:174px;border:1px dashed var(--line);border-radius:50%}.monogram strong{font:112px/.9 "Playfair Display",serif;letter-spacing:-.09em;color:var(--accent);z-index:1}.monogram span{font:9px "DM Mono",monospace;letter-spacing:.2em;margin-top:19px;text-transform:uppercase;color:var(--muted);z-index:1}.orbit-note{position:absolute;right:0;bottom:18px;font:10px "DM Mono",monospace;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+@keyframes rotate{to{transform:rotate(360deg)}}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:17px 0;white-space:nowrap}.marquee-track{display:flex;width:max-content;animation:marquee 32s linear infinite}.marquee span{font:11px "DM Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:0 28px}.marquee b{color:var(--accent);font-weight:400}@keyframes marquee{to{transform:translateX(-50%)}}
+section{padding:104px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px}.section-head h2{font:clamp(42px,5vw,62px)/1 "Playfair Display",serif;letter-spacing:-.045em;margin:12px 0 0;font-weight:500}.section-intro{max-width:340px;color:var(--muted);font-size:13px;line-height:1.8}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}.about-statement{font:clamp(27px,3vw,38px)/1.35 "Playfair Display",serif;letter-spacing:-.025em;margin:0}.about-text{color:var(--muted);line-height:1.9;font-size:14px}.about-text p{margin:0 0 18px}.skill-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}.tag{padding:9px 12px;border:1px solid var(--line);font:10px "DM Mono",monospace;letter-spacing:.04em;color:var(--muted)}
+.dark-band{background:var(--paper);color:var(--ink);border-block:1px solid var(--line)}.dark-band .mono{color:var(--muted)}.dark-band .section-intro{color:var(--muted)}.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;background:transparent;border:0}.focus-card{padding:34px 28px;background:var(--bg);border:1px solid var(--line);min-height:205px;transition:transform .25s,border-color .25s,box-shadow .25s}.focus-card:hover{transform:translateY(-4px);border-color:var(--accent2);box-shadow:var(--shadow)}.focus-card .num{font:11px "DM Mono",monospace;color:var(--accent)}.focus-card h3{font:26px "Playfair Display",serif;font-weight:500;margin:24px 0 10px}.focus-card p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+.timeline{position:relative;margin-top:10px}.timeline:before{content:"";position:absolute;left:170px;top:0;bottom:0;width:1px;background:var(--line)}.timeline-item{display:grid;grid-template-columns:170px 1fr;gap:54px;padding:0 0 42px;position:relative}.timeline-item:before{content:"";position:absolute;left:165px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);z-index:1}.timeline-date{font:10px "DM Mono",monospace;color:var(--muted);padding-top:6px;line-height:1.7}.timeline-card{background:var(--paper);border:1px solid var(--line);padding:26px 30px;box-shadow:var(--shadow);transition:border .2s,transform .2s}.timeline-card:hover{border-color:var(--accent2);transform:translateY(-3px)}.timeline-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.timeline-card h3{font:25px "Playfair Display",serif;font-weight:500;margin:0 0 6px}.role{font-size:12px;color:var(--accent);font-weight:600}.place{font-size:11px;color:var(--muted);margin-top:7px}.expand{border:1px solid var(--line);background:transparent;border-radius:50%;width:32px;height:32px;flex:0 0 auto;cursor:pointer;transition:.2s}.expand:hover{border-color:var(--accent);color:var(--accent)}.timeline-detail{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}.timeline-detail>div{overflow:hidden}.timeline-card.open .timeline-detail{grid-template-rows:1fr}.timeline-detail p{font-size:13px;line-height:1.85;color:var(--muted);margin:18px 0 0;max-width:720px}.timeline-hint{font:10px "DM Mono",monospace;color:var(--muted);margin-top:20px}
+.achievements{background:var(--paper)}.achievement-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.achievement{border:1px solid var(--line);padding:30px;position:relative;min-height:205px;transition:.25s}.achievement:hover{transform:translateY(-4px);border-color:var(--accent2);box-shadow:var(--shadow)}.achievement .kicker{font:10px "DM Mono",monospace;color:var(--accent);text-transform:uppercase;letter-spacing:.12em}.achievement h3{font:25px "Playfair Display",serif;font-weight:500;margin:20px 0 9px}.achievement p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}.achievement .index{position:absolute;right:25px;top:24px;font:12px "DM Mono",monospace;color:var(--muted)}
+.education-row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0}.education-row h3{font:25px "Playfair Display",serif;font-weight:500;margin:0 0 6px}.education-row p{font-size:12px;color:var(--muted);margin:0}.education-date{font:10px "DM Mono",monospace;color:var(--muted)}
+.contact{background:var(--ink);color:var(--bg);padding:95px 0}.contact .mono{color:#aeb6ad}.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}.contact h2{font:clamp(48px,7vw,82px)/1 "Playfair Display",serif;letter-spacing:-.055em;font-weight:500;margin:18px 0 22px}.contact h2 em{color:#d98d72}.contact-copy{font-size:13px;line-height:1.8;color:#b6beb5;max-width:440px}.contact-links{display:flex;flex-direction:column;gap:12px}.contact-link{display:flex;align-items:center;justify-content:space-between;padding:17px 0;border-bottom:1px solid #454d47;font-size:13px;transition:color .2s}.contact-link:hover{color:#e9a58b}.contact-link span{display:flex;align-items:center;gap:12px}.contact-link svg{width:18px;height:18px}
+footer{background:var(--ink);color:#9ca69d;border-top:1px solid #454d47;padding:22px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;font:10px "DM Mono",monospace;letter-spacing:.06em}.backtop{color:#e9a58b}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:800px){.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--paper);padding:22px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:20px}.nav-links.show{display:flex}.menu-btn{display:grid}.hero{padding:76px 0 65px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero-aside{min-height:310px}.orbit{width:260px;height:260px}.monogram{width:210px;height:210px}.monogram strong{font-size:96px}.orbit-note{right:8%;bottom:0}.about-grid{grid-template-columns:1fr;gap:28px}.timeline:before{left:9px}.timeline-item{grid-template-columns:1fr;gap:10px;padding-left:34px}.timeline-item:before{left:4px}.timeline-date{padding:0}.focus-grid{grid-template-columns:1fr}.focus-card{min-height:auto}.contact-grid{grid-template-columns:1fr;gap:38px}.section-head{align-items:flex-start;flex-direction:column;gap:15px}}
+@media(max-width:560px){.wrap{width:min(100% - 34px,1120px)}.nav{height:68px}.nav-links{top:68px}.brand{font-size:13px}.hero{padding-top:64px}h1{font-size:60px}.hero-copy{font-size:14px}.section-head h2{font-size:43px}section{padding:76px 0}.achievement-grid{grid-template-columns:1fr}.timeline-card{padding:22px}.timeline-card h3{font-size:22px}.education-row{align-items:flex-start;gap:15px;flex-direction:column}.footer-row{flex-direction:column}.contact{padding:75px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Aarikaa Arora home"><span class="brand-mark">AA</span><span>AARIKAA ARORA<span class="accent">.</span></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a><a href="#focus">Interests</a><a href="#journey">Journey</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button>
+      <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open navigation"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow mono">A young voice. A wider perspective.</div>
+      <h1>Ideas into<br><em>impact.</em></h1>
+      <p class="hero-copy">I'm Aarikaa Arora — a student, youth leader and founder interested in the intersections of public policy, debate, performing arts and social change. I believe a voice matters most when it makes room for others.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#journey">Explore my journey <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a class="btn secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=aarikaa.aroraa%40gmail.com" target="_blank" rel="noopener noreferrer">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="m4 6 8 7 8-7"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-aside" aria-label="Aarikaa Arora monogram artwork">
+      <div class="orbit"><span class="orbit-dot"></span></div>
+      <div class="monogram"><strong>AA</strong><span>Aarikaa Arora</span></div>
+      <div class="orbit-note">Curiosity / Courage / Change</div>
+    </div>
+  </div>
+</section>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Public policy <b>✳</b></span><span>Youth leadership <b>✳</b></span><span>Debate & dialogue <b>✳</b></span><span>Social impact <b>✳</b></span><span>Performing arts <b>✳</b></span><span>Public policy <b>✳</b></span><span>Youth leadership <b>✳</b></span><span>Debate & dialogue <b>✳</b></span><span>Social impact <b>✳</b></span><span>Performing arts <b>✳</b></span></div></div>
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="mono">01 / A little about me</div><h2>Curious by nature.<br><em class="accent">Purposeful by choice.</em></h2></div><p class="section-intro">Learning to understand the world, question it thoughtfully and contribute to the change I hope to see.</p></div>
+    <div class="about-grid">
+      <p class="about-statement reveal">“I have never been interested in simply watching the world happen.”</p>
+      <div class="about-text reveal">
+        <p>Politics and debate give my curiosity a direction; social impact gives it purpose. Through theatre, I have learned the power of expression — and of giving others a voice.</p>
+        <p>I'm driven by a desire to learn, create, lead and go further than expected. I hope to use what I learn not just to build my own opportunities, but to help make them more accessible to others.</p>
+        <div class="skill-tags"><span class="tag">TEAM MANAGEMENT</span><span class="tag">PUBLIC POLICY</span><span class="tag">EDUCATIONAL LEADERSHIP</span><span class="tag">PUBLIC SPEAKING</span><span class="tag">COMMUNITY ENGAGEMENT</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="dark-band" id="focus">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="mono">02 / Areas of interest</div><h2>What moves me.</h2></div><p class="section-intro">A few spaces where I find room to think, express, collaborate and make a difference.</p></div>
+    <div class="focus-grid reveal">
+      <article class="focus-card"><span class="num">01 — THINK</span><h3>Law & Public Policy</h3><p>Understanding institutions, civic questions and the decisions that shape public life.</p></article>
+      <article class="focus-card"><span class="num">02 — SPEAK</span><h3>Debate & Dialogue</h3><p>Making a case, listening closely and learning to engage with perspectives beyond my own.</p></article>
+      <article class="focus-card"><span class="num">03 — CREATE</span><h3>Arts & Social Impact</h3><p>Using performance and community initiatives to encourage expression, awareness and opportunity.</p></article>
+    </div>
+  </div>
+</section>
+<section id="journey">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="mono">03 / Experience</div><h2>The journey so far.</h2></div><p class="section-intro">Every experience has offered a different lesson in leadership, service and finding the confidence to contribute.</p></div>
+    <div class="timeline">
+      <article class="timeline-item reveal"><div class="timeline-date">AUG 2026 — PRESENT<br>NEW DELHI, INDIA</div><div class="timeline-card"><div class="timeline-top"><div><h3>Ministry of Parliamentary Affairs</h3><div class="role">Best Speaker · 58th Youth Parliament</div><div class="place">Government of India</div></div><button class="expand" aria-label="Expand Ministry of Parliamentary Affairs details" aria-expanded="false">+</button></div><div class="timeline-detail"><div><p>For the 58th Youth Parliament, my school was awarded first prize and I was recognised as Best Speaker by the Ministry of Parliamentary Affairs. We were invited to the New Parliament building in New Delhi to repeat our showcase before dignitaries and members of Parliament. I served as Speaker and led proceedings addressing issues including deepfake prevention, regulation of online money gaming apps and breach of privilege. The experience offered a closer understanding of deliberation and the importance of representing citizens' voices.</p></div></div></div></article>
+      <article class="timeline-item reveal"><div class="timeline-date">DEC 2025 — PRESENT<br>DELHI, INDIA</div><div class="timeline-card"><div class="timeline-top"><div><h3>National Cadet Corps (NCC)</h3><div class="role">NCC Cadet · A-Certificate Holder</div><div class="place">India</div></div><button class="expand" aria-label="Expand NCC details" aria-expanded="false">+</button></div><div class="timeline-detail"><div><p>An actively participating cadet and A-Certificate holder. Regular unit activities, early morning drills, sports competitions and interactive lectures have strengthened my understanding of discipline, unity and camaraderie.</p></div></div></div></article>
+      <article class="timeline-item reveal"><div class="timeline-date">OCT 2025 — PRESENT<br>NEW DELHI, INDIA</div><div class="timeline-card"><div class="timeline-top"><div><h3>SarvHope Society</h3><div class="role">Founder</div><div class="place">Student-led social impact initiative</div></div><button class="expand" aria-label="Expand SarvHope Society details" aria-expanded="false">+</button></div><div class="timeline-detail"><div><p>Founded on the belief that opportunity should never be determined by circumstance, SarvHope Society works to bridge gaps in social awareness through performing arts. The initiative aims to empower young people through fundraising, volunteer engagement, community partnerships and awareness campaigns. My work includes communications, event and project planning, workshops and execution with a team of student volunteers.</p></div></div></div></article>
+      <article class="timeline-item reveal"><div class="timeline-date">APR 2024 — PRESENT<br>DELHI, INDIA</div><div class="timeline-card"><div class="timeline-top"><div><h3>Interact District 3012</h3><div class="role">Member · Interact Club</div><div class="place">Rotary-sponsored youth leadership and service organisation</div></div><button class="expand" aria-label="Expand Interact Club details" aria-expanded="false">+</button></div><div class="timeline-detail"><div><p>Participated in community initiatives including blood donation drives, animal shelter visits, workshops in government schools and fundraisers. The experience continues to reinforce the importance of empathy and giving back to the community.</p></div></div></div></article>
+      <article class="timeline-item reveal"><div class="timeline-date">DEC 2024 — OCT 2025<br>DELHI, INDIA</div><div class="timeline-card"><div class="timeline-top"><div><h3>The World Scholar's Cup</h3><div class="role">Regional Qualifier</div><div class="place">Team and individual competitions</div></div><button class="expand" aria-label="Expand World Scholar's Cup details" aria-expanded="false">+</button></div><div class="timeline-detail"><div><p>Across two participating years, my team earned Second Overall Regional Qualifiers, Second Overall in the Scholars Challenge Examination and Fourth Overall in Creative Writing. I also received twelve and nine individual medals in the respective years. The competition strengthened my debate, critical-thinking and team-coordination skills.</p></div></div></div></article>
+    </div>
+    <p class="timeline-hint">SELECT THE + ICON ON ANY EXPERIENCE TO READ MORE</p>
+  </div>
+</section>
+<section class="achievements" id="recognition">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="mono">04 / Recognition</div><h2>Milestones & moments.</h2></div><p class="section-intro">A few milestones that reflect the work, collaboration and curiosity behind the journey.</p></div>
+    <div class="achievement-grid">
+      <article class="achievement reveal"><span class="kicker">Youth Parliament · 2026</span><span class="index">01</span><h3>Best Speaker</h3><p>Recognised by the Ministry of Parliamentary Affairs, Government of India, during the 58th Youth Parliament.</p></article>
+      <article class="achievement reveal"><span class="kicker">World Scholar's Cup · 2024–25</span><span class="index">02</span><h3>Regional Team Recognition</h3><p>Second Overall Regional Qualifiers, Second Overall in Scholars Challenge and Fourth Overall in Creative Writing.</p></article>
+      <article class="achievement reveal"><span class="kicker">World Scholar's Cup · Individual</span><span class="index">03</span><h3>Individual Medals</h3><p>Twelve and nine individual medals across the two participating years.</p></article>
+      <article class="achievement reveal"><span class="kicker">Leadership & Service</span><span class="index">04</span><h3>Building with Purpose</h3><p>Founder of SarvHope Society and active participant in NCC and Interact Club community initiatives.</p></article>
+    </div>
+  </div>
+</section>
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="mono">05 / Education</div><h2>Where it begins.</h2></div><p class="section-intro">A continuing education journey shaped by curiosity, participation and learning beyond the classroom.</p></div>
+    <div class="education-row reveal"><div><h3>Bal Bharati Public School, Pitampura</h3><p>Student · High School</p></div><div class="education-date">APR 2015 — FEB 2029</div></div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal"><div class="mono">06 / Let's connect</div><h2>Good things<br>start with a <em>hello.</em></h2><p class="contact-copy">Whether it's a conversation about public policy, youth initiatives, debate or a meaningful collaboration, I'd be glad to connect.</p></div>
+    <div class="contact-links reveal">
+      <a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=aarikaa.aroraa%40gmail.com" target="_blank" rel="noopener noreferrer"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></svg>Email Aarikaa</span><span>↗</span></a>
+      <a class="contact-link" href="https://www.linkedin.com/in/aarikaa-arora-a38763428" target="_blank" rel="noopener noreferrer"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.34 18H5.67V9.4h2.67ZM7 8.23a1.55 1.55 0 1 1 .02-3.1A1.55 1.55 0 0 1 7 8.23ZM18.34 18h-2.67v-4.18c0-1-.02-2.28-1.39-2.28-1.4 0-1.61 1.09-1.61 2.21V18H10V9.4h2.56v1.17h.04a2.8 2.8 0 0 1 2.52-1.39c2.7 0 3.22 1.78 3.22 4.1Z"/></svg>Connect on LinkedIn</span><span>↗</span></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> AARIKAA ARORA. ALL RIGHTS RESERVED.</span><span>BUILT AROUND CURIOSITY & PURPOSE.</span><a class="backtop" href="#home">BACK TO TOP ↑</a></div></footer>
+<script>
+const root=document.documentElement;
+const themeToggle=document.getElementById('themeToggle');
+themeToggle.addEventListener('click',()=>{const dark=root.getAttribute('data-theme')!=='dark';root.setAttribute('data-theme',dark?'dark':'light');localStorage.setItem('aarikaa-theme',dark?'dark':'light');});
+if(localStorage.getItem('aarikaa-theme')==='dark')root.setAttribute('data-theme','dark');
+document.getElementById('menuToggle').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('show'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('show')));
+document.querySelectorAll('.expand').forEach(btn=>btn.addEventListener('click',()=>{const card=btn.closest('.timeline-card');const open=card.classList.toggle('open');btn.textContent=open?'−':'+';btn.setAttribute('aria-expanded',String(open));}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const progress=document.getElementById('progress');
+window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(max>0?window.scrollY/max*100:0)+'%';},{passive:true});
+document.getElementById('year').textContent=new Date().getFullYear();
+const sections=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.nav-links a')];
+const navObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-35% 0px -55% 0px'});
+sections.forEach(s=>navObserver.observe(s));
+</script>
+</body>
+</html>
